@@ -37,15 +37,15 @@ public class AccountsPageTest extends BaseTest {
 	@Test
 	public void accPageHeadersCountTest() {
 		List<String> actualAccPageHeadersList = accPage.getAccountsPageHeadersList();
-		System.out.println("Acc Page Headers List: " + actualAccPageHeadersList);
+		System.out.println("Acc Page Headers Lists: " + actualAccPageHeadersList);
 		Assert.assertEquals(actualAccPageHeadersList.size(), AppConstants.ACCOUNTS_PAGE_HEADERS_COUNT);
 	}
 	
 	@Test
 	public void accPageHeadersValueTest() {
 		List<String> actualAccPageHeadersList = accPage.getAccountsPageHeadersList();
-		System.out.println("Actual Acc Page Headers List: " + actualAccPageHeadersList);
-		System.out.println("Expected Acc Page Headers List:" + AppConstants.EXPECTED_ACCOUNTS_PAGE_HEADERS_LIST);
+		System.out.println("Actual Acc Page Headers Lists: " + actualAccPageHeadersList);
+		System.out.println("Expected Acc Page Headers Lists:" + AppConstants.EXPECTED_ACCOUNTS_PAGE_HEADERS_LIST);
 		Assert.assertEquals(actualAccPageHeadersList, AppConstants.EXPECTED_ACCOUNTS_PAGE_HEADERS_LIST);
 	}
 	
