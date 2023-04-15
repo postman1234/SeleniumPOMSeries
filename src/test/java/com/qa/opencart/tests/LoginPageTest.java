@@ -29,6 +29,7 @@ public class LoginPageTest extends BaseTest {
 	@Description("..........checking the url of the page.........tester: Kaustub")
 	@Test(priority = 2)
 	public void loginPageURLTest() {
+		//Getting login page URL
 		String actualURL = loginPage.getLoginPageURL();
 		Assert.assertTrue(actualURL.contains(AppConstants.LOGIN_PAGE_URL_FRACTION_VALUE));
 	}
