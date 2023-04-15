@@ -16,12 +16,11 @@ import io.qameta.allure.Story;
 @Epic("EPIC - 100: design login for open cart app")
 @Story("US-Login: 101: design login page features for open cart")
 public class LoginPageTest extends BaseTest {
-	
-	
 	@Severity(SeverityLevel.TRIVIAL)
 	@Description("..........checking title of the page.........tester: Kaustub")
 	@Test(priority = 1)
 	public void loginPageTitleTest() {
+		//Getting the page title here
 		String actualTitle = loginPage.getLoginPageTitle();
 		Assert.assertEquals(actualTitle, AppConstants.LOGIN_PAGE_TITLE_VALUE);
 	}
