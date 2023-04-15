@@ -14,6 +14,7 @@ public class AccountsPageTest extends BaseTest {
 
 	@BeforeClass
 	public void accPageSetup() {
+		//This is login page changes
 		accPage = loginPage.doLogin(prop.getProperty("username").trim(), prop.getProperty("password").trim());
 	}
 
