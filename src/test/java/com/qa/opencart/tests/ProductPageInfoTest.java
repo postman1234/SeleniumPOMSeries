@@ -1,16 +1,15 @@
 package com.qa.opencart.tests;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-
+import com.qa.opencart.base.BaseTest;
+import com.qa.opencart.listeners.Retry;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.qa.opencart.base.BaseTest;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class ProductPageInfoTest extends BaseTest{
 	
@@ -97,7 +96,7 @@ public class ProductPageInfoTest extends BaseTest{
 		}
 		
 		System.out.println(expProdListInCart);
-		softAssert.assertTrue(expProdListInCart.containsAll(cartProdList));
+		softAssert.assertTrue(cartProdList.containsAll(expProdListInCart));
 		
 		
 		softAssert.assertAll();

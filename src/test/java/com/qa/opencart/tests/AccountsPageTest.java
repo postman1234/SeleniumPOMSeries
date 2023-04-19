@@ -1,14 +1,13 @@
 package com.qa.opencart.tests;
 
-import java.util.List;
-
+import com.qa.opencart.base.BaseTest;
+import com.qa.opencart.constants.AppConstants;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.qa.opencart.base.BaseTest;
-import com.qa.opencart.constants.AppConstants;
+import java.util.List;
 
 public class AccountsPageTest extends BaseTest {
 
